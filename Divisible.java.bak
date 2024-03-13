@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Divisible 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Dividend: ");
+		int Dividend = s.nextInt();
+		System.out.println("Enter the Divisor:");
+		int Divisor = s.nextInt();
+
+		if ((Dividend % Divisor) == 0)
+		{
+			System.out.println(Dividend + " is a multiple of "+Divisor);
+		}
+		else
+		{
+			System.out.println(Dividend + " is not a multiple of "+Divisor);
+		}
+	}
+}

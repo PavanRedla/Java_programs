@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class BookDetails 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Book Code:");
+		String BCode = s.nextLine();
+		System.out.println("Enter Book Name:");
+		String BName = s.nextLine();
+		System.out.println("Enter Book Author:");
+		String BAuthor = s.nextLine();
+		System.out.println("Enter Book Price:");
+		float BPrice = s.nextFloat();
+		System.out.println("Enter Book Quantity:");
+		int BQuantity = s.nextInt();
+		System.out.println("Book Details:");
+		System.out.println("Book Code:"+BCode);
+		System.out.println("Book Name:"+BName);
+		System.out.println("Book Author:"+BAuthor);
+		System.out.println("Book Price:"+BPrice);
+		System.out.println("Book Quantity:"+BQuantity);
+	}
+}

@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+class GreatestAmongFour 
+{
+	public static void main(String[] args) 
+	{
+		int result = 0;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Number-1:");
+		int a = s.nextInt();			  
+		System.out.println("Enter Number-2:");
+		int b = s.nextInt();
+		System.out.println("Enter Number-3:");
+		int c = s.nextInt();
+		System.out.println("Enter Number-4:");
+		int d = s.nextInt();
+
+		if (a>b)
+		{
+			if(a>c && a>d)
+			{
+				result = a;
+			}
+			else
+			{
+				if(c>d)
+				{
+					result = c;
+				}
+				else
+				{
+					result =d ;
+				}
+			}
+		}
+		else
+		{
+			if (b>c && b>d)
+			{
+				result = b;
+			}
+			else
+			{
+				if(c>d)
+				{
+					result = c;
+				}
+				else
+				{
+					result =d;
+				}
+			}
+		}
+		System.out.println("Greatest Among Four is : "+result);
+	}
+}

@@ -1,0 +1,29 @@
+// Write a program to add numbers from 1 to n, but skip the multiples of 5 .
+
+import java.util.Scanner;
+
+class Add 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the value of n:");
+		int n = s.nextInt();
+
+		int i = 1, sum = 0;
+		while(i<=n)
+		{
+			if (i%5==0)
+			{
+				i++;
+				continue;
+			}
+			else
+			{
+				sum = sum+i;
+				i++;
+			}
+		}
+		System.out.println("Sum is : "+sum);
+	}
+}

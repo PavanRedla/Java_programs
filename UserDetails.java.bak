@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class UserDetails 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter User Name:");
+		String uName = s.nextLine();
+		System.out.println("Enter Email ID:");
+		String mId = s.nextLine();
+		System.out.println("Enter Phone Number:");
+		Long PhNo = s.nextLong();
+		System.out.println("User Details are:");
+		System.out.pirntln("User Name:"+uName);
+		System.out.pirntln("Email Id:"+mId);
+		System.out.println("Phone Number:"+PhNo);
+	}
+}
