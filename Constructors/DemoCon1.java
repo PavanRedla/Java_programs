@@ -1,0 +1,30 @@
+// Demo on Constructors
+
+class Display
+{
+	int a = 10;
+
+	Display()
+	{
+		System.out.println("*** Constructor ***");
+		System.out.println("The value of a is : "+a);
+	}
+
+	void dis()
+	{
+		System.out.println("*** Instance Method ***");
+		System.out.println("The value of a is : "+a);
+	}
+}
+
+
+class DemoCon1 
+{
+	public static void main(String[] args) 
+	{
+		Display ob = new Display();   // Constructor_call 
+		ob.dis();  // Method_call
+		ob.dis();  // Method_call 
+		ob.dis();  // Method_call 
+	}
+}
