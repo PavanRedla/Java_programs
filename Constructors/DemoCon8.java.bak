@@ -1,0 +1,95 @@
+// Loading data to objects using Setter Methods
+
+import java.util.Scanner;
+
+class BankCustomer
+{
+	int accNo;
+	String custName, accType, branch;
+	float balance;
+
+	void setAccNo(int accNo)
+	{
+		this.accNo = accNo;
+	}
+
+	void setCustName(String custName)
+	{
+		this.custName = custName;
+	}
+
+	void setBalance(float balance)
+	{
+		this.balance = balance;
+	}
+
+	void setAccType(String accType)
+	{
+		this.accType = accType;
+	}
+
+	void setBranch(String branch)
+	{
+		this.branch = branch;
+	}
+
+	int getAccNo()
+	{
+		return accNo;
+	}
+
+	String getCustName()
+	{
+		return custName;
+	}
+
+	float getBalance()
+	{
+		return balance;
+	}
+
+	String getAccType()
+	{
+		return accType;
+	}
+
+	String getBranch()
+	{
+		return branch;
+	}
+
+}
+
+class DemoCon8 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+
+		BankCustomer ob = new BankCustomer();
+
+		System.out.println("Enter Account number:");
+		ob.setAccNo(Integer.parseInt(s.nextLine()));
+
+		System.out.println("Enter Customer Name:");
+		ob.setCustName(s.nextLine());
+
+		System.out.println("Enter Customer Account Balance:");
+		ob.setBalance(Float.pareFloat(s.nextLine()));
+
+		System.out.println("Enter Account Type:");
+		ob.setAccType(s.nextLine());
+
+		System.out.println("Enter Branch Name");
+		ob.setBranch(s.nextLine());
+
+		System.out.println("--Customer Details--");
+		System.out.println("Enter Account number:"+ob.getAccNo());
+		System.out.println("Enter Customer Name:"+ob.getCustName());
+		System.out.println("Enter Account Balance:"+ob.getBalance());
+		System.out.println("Enter Account Type:"+ob.getAccType());
+		System.out.println("Enter Branch Name:"+ob.getBranch());
+
+		ob.setAccNo(s.nextLine());
+	}
+}
