@@ -1,0 +1,27 @@
+// Construct program to demonstrate static block in Sub class
+
+
+class BTest2
+{
+	static int z;
+
+	static
+	{
+		System.out.println("-- Sub Class Static Block --");
+		System.out.println("Z value is : "+z);
+	}
+	
+	static void dis()
+	{
+		z = 500;
+		System.out.println("-- Sub Class Static dis() method --");
+		System.out.println("Z value is : "+z);
+	}
+}
+class DemoBlock2
+{
+	public static void main(String[] args) 
+	{
+		BTest2.dis();
+	}
+}
