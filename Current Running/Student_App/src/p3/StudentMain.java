@@ -37,8 +37,18 @@ public class StudentMain {
 		System.out.println("Enter Student Pincode : ");
 		sa.pinCode = s.nextInt();
 		
-		System.out.println("Enter Student Total Marks: ");
-		sr.totalMarks = s.nextInt();	
+		int i = 1;
+		int sub =0;
+		while (i<=6) {
+			System.out.println("Enter the Marks of Subject-"+i);
+			sub = s.nextInt();
+			if (sub<0 && sub>100)
+			{
+				System.out.println("Invalid Marks!!!, please enter the valid marks...");
+			}
+			sr.totalMarks=sr.totalMarks+sub;
+			i++;
+		}
 		sr.per = (sr.totalMarks/600f) * 100;		
 		
 		sd.getStudentData();
