@@ -9,7 +9,7 @@ public class StudentResult {
 		System.out.println("**STUDENT RESULT**");
 		System.out.println("Student Total Marks: "+totalMarks);
 		System.out.println("Student Percentage is: "+per);
-		System.out.println("Student Percentage is: "+grade);
+		System.out.println("Student Grade is: "+grade);
 	}
 
 }
