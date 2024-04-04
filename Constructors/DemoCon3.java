@@ -1,6 +1,6 @@
 // Demo on Constructors with same names for local varibales (name, city, mId, phNo) and instance variables (name, city, mId, phNo).
 
-// if the local varibles and instance variables are same then the constructor gets confused and it display output will as null, inorder to avoid this situation, 
+// if the local varibles and instance variables are having same names then the constructor gets confused and it will display output as null, inorder to avoid this situation, 
 
 // we use this keyword. "this" keyword will hold the the reference(address) value of the Customer classs object (ob) and using which it will initialises the instance variables
 
