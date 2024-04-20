@@ -37,6 +37,9 @@ public class Access
 				return x%y;
 			};
 			break;
+		case 6:
+			System.out.println("Program Stopped!!!");
+			System.exit(0);    // to terminate the program.
 		}// end of switch
 		return ob;
 	}
