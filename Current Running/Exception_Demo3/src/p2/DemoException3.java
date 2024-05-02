@@ -24,5 +24,13 @@ public class DemoException3
 		{
 			System.out.println(iae.toString());
 		}
+		
+//		Instead of writing above 3 catch blocks we can write single catch block 
+// 		by separating Exceptions with '|' as shown below 
+		
+//		catch(ClassNotFoundException |InstantiationException | IllegalAccessException cnfe)
+//		{
+//			System.out.println(cnfe.toString());
+//		}
 	}
 }
