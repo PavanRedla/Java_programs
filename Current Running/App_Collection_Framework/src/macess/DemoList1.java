@@ -151,7 +151,7 @@ public class DemoList1
 						while(it.hasNext())
 						{
 							Integer el = (Integer)it.next();
-							System.out.print(el.toString());
+							System.out.print(el.toString()+" ");
 						}
 						
 						System.out.println("---ListIterator<E>---");
@@ -160,13 +160,13 @@ public class DemoList1
 						while(li.hasNext())
 						{
 							Integer el = (Integer)li.next();
-							System.out.print(el.toString());
+							System.out.print(el.toString()+" ");
 						}
 						System.out.print("\nBackward: ");
 						while(li.hasPrevious())
 						{
 							Integer el = (Integer)li.previous();
-							System.out.print(el.toString());
+							System.out.print(el.toString()+" ");
 						}
 						
 						System.out.println("---Spliterator<E>---");
