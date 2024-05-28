@@ -1,7 +1,7 @@
 package macess;
 import java.util.*;
 
-public class DemoString
+public class DemoSorting
 {
 	public static void main(String[] args) 
 	{
